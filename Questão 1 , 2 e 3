@@ -1,0 +1,14 @@
+Questao 1:Pilha,Pois a pilha opera no princípio LIFO (Last-In, First-Out), que significa "o último a entrar é o primeiro a sair".
+Questao 2:Usaria uma Pilha (para garantir a ordem LIFO) implementada com Lista Encadeada,para ter flexibilidade no tamanho e evitar desperdício de memória ou falha por capacidade.
+
+
+
+Questao 3:Primeiro, serão executadas todas as tarefas da Pilha.
+
+    Quando a Pilha estiver vazia, serão executadas as tarefas da Fila.
+
+Justificativa:
+
+    Pilha (Tarefas Prioritárias): A pilha armazena as tarefas que "furaram a fila". Como ela funciona em LIFO (Last-In, First-Out), a última tarefa prioritária que chegou será a primeira a ser resolvida. O sistema deve esvaziar completamente esta pilha antes de olhar para as tarefas comuns.
+
+    Fila (Tarefas Comuns): A fila armazena as tarefas normais. Ela funciona em FIFO (First-In, First-Out). A primeira tarefa que entrou na fila será a primeira a ser processada, mas somente após todas as tarefas prioritárias (da pilha) terem sido concluídas.
